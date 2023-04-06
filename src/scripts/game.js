@@ -169,7 +169,7 @@ async function sleep(ms) {
 }
 
 window.onload = function() {
-  let audio = document.getElementById("music");
+  const audio = document.getElementById("music");
   audio.play();
 }
 
