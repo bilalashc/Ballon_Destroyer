@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/HizkiasAbraham/balloon-destroyer.git"
+    "url": "git+ssh://git@github.com/bilalashc/balloon-destroyer.git"
   },
-  "author": "Hizkias Abraham",
+  "author": "Bilal Choudhry",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/HizkiasAbraham/balloon-destroyer/issues"
+    "url": "https://github.com/bilalashc/balloon-destroyer/issues"
   },
-  "homepage": "https://github.com/HizkiasAbraham/balloon-destroyer#readme",
+  "homepage": "https://github.com/bilalashc/balloon-destroyer#README",
   "dependencies": {
     "@babel/core": "^7.21.4",
     "@babel/preset-env": "^7.21.4",
