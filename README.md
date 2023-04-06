@@ -2,7 +2,7 @@
 
 [Ballon Destroyer](https://bilalashc.github.io/Ballon_Destroyer/) is a web browser game that helps users test and improve their typing skills by popping all the ballons before they exit the screen.
 
-The link to the live site for the game can be found [here](https://bilalashc.github.io/Ballon_Destroyer/)
+[Click here to view the project](https://bilalashc.github.io/Ballon_Destroyer/)
 
 # Table of Contents
 ### 1) Game Description
