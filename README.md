@@ -4,6 +4,11 @@
 
 The link to the live site for the game can be found [here](https://bilalashc.github.io/Ballon_Destroyer/)
 
+# Table of Contents
+### 1) Game Description
+### 2) Tech Stack 
+### 3) Features
+
 ## Game Description
 
 Characters from the alphabet are presented on a balloon in random locations on the screen. As the balloon with a character is visible on the canvas, the user can press the character value on the keyboard and the balloon with the corresponding character is destroyed. For each balloon that is destroyed, the user gains 5 points. The user has five lives, but will lose a life for each balloon that escapes. Lives are the number of chances a user has to destroy the balloons before it escapes. The user can have varying difficulty levels, to set the speed of the balloons. The difficulties are: Easy, Medium, and Hard. In addition, the user will be able to track their highest score.  
