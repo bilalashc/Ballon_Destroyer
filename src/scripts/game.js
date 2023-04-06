@@ -145,7 +145,7 @@ export class Game {
 
     context.fillStyle = 'black';
     if (!lives) {
-      context.fillText('Game Over! 0 Lives', beginX, beginY);
+      context.fillText('Game Over!', beginX, beginY);
     } else {
       context.fillText(`Game Over! ${lives} Lives`, beginX, beginY);
     }
