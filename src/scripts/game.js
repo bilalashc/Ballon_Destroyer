@@ -167,3 +167,9 @@ async function sleep(ms) {
     setTimeout(r, ms);
   });
 }
+
+window.onload = function() {
+  let audio = document.getElementById("music");
+  audio.play();
+}
+
