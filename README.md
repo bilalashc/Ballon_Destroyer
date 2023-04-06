@@ -90,17 +90,18 @@ function setGameHero(image) {
 }
 ```
 
-### 3) Destroying balloon if a character is entered from keyboard
+### 3) Destroying balloons by pressing corresponding character on keyboard
 
-The feature in a game of destroying a balloon inside with text when the same key value is entered from keyboard would allow the player to enter a specific key into their keyboard which, when pressed, will destroy the balloon in the canvas. This feature adds an element of interactivity to the game and it is the core feature of the game that challenges the user where user is required to enter the keyboard characters as fast as possible and collect more scores. Additionally, it can also add another layer of challenge as the player may have to enter the correct key in order to progress.
+The balloon is destroyed when the character inside the balloon and the corresponding character is entered from the keyboard by the user. This is the core feature of the game and adds an element of interactivity. The user is challenged to enter the keyboard characters as fast as possible to increase his score and not lose any lives. In addition, the user is able to select difficulty based on their typing proficiency. 
 
 #### Challenge
 
-The challenge with this feature is that it requires the player to be very precise and to enter the key as quickly as possible. This can be difficult for some players and may require practice in order to improve their scores. Additionally, the key value needs to be chosen carefully to ensure that it does not overlap with other commands and does not prevent the player from continuing the game. Finally, there may be necessary constraints for the game such as difficulty levels that need to be considered to provide an enjoyable gaming experience.
+The challenge with this feature was that it requires the player to be precise and enter the character on the keyboard as quickly as possible. In addition, the key value needs to be picked carefully to ensure that it does not overlap with other commands and does not prevent the player from continuing the game. There was an additional challenge to place the necessary constraints such as different difficulty levels to provide the user with an enjoyable gaming experience. 
 
 #### Solution
 
-The user waits for the ballons enter to atmospher and becomes visible. Then, I added event listner to the game body to listen for the key entered. When the user enters the matching key, I delete the respective ballon from array of ballons created and the change is reflected in the canvas. In addition, a user can choose from levels of difficulties from game control `EASY`, `MEDIUM` and `HARD` and challenge them selves with the balloon step shift. Below is the snippet of the code that controls how these levels affect the step each balloon moves down at each frame.
+The user waits for the balloon to enter the atmosphere as it becomes visible. An event listener was added to the game to listen for the key entered. When the user enters the matching key, the respective balloon from the array of balloons created is deleted. This change is reflected on the canvas. Additionaly, a user can can choose from different levels of difficulty under game control. These include: `Easy`, `Medium`, and `Hard`. A snippet of the code that controls the difficulty levels based on the step the balloons moves down at each frame is showcased below:
+
 
 ```javascript
 export const DIFFICULTIES = {
@@ -109,3 +110,4 @@ export const DIFFICULTIES = {
   HARD: 60,
 };
 ```
+
