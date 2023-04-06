@@ -17,15 +17,15 @@ This app was developed using `HTML`, `CSS` and `JavaScript`. In addition, `Webpa
 
 ### 1) Balloons Animation
 
-The feature of animating balloons as if falling from atmosphere in the canvas involves creating a sequence of images that depict a group of balloons floating or falling through the sky. The image sequence of drawing balloons and text inside in the canvas is used to create an animation in the canvas, with the help of JavaScript, which will give the appearance that the balloons are falling through the atmosphere. The animation can be customized in terms of speed, color and size of the balloons, as well as their direction and distance they move throughout the canvas.
+To animate the balloons as they are dropping from the atmosphere in the canvas involves generating a sequence of images that depict a group of balloons floating or falling through the sky. The image sequence of drawing balloons and text inside the canvas is used to create the animation effect on the canvas by utilizing JavaScript. It gives the illusion that the ballons are dropping from the atmosphere. The animated balloons can be customized according to speed, color, size, direction, and the distance on the canvas.
 
 #### Challenge
 
-The challenge of implementing this feature was creating the animation sequence. This required creating a series of different images of balloons which then had to be manipulated and combined to create a smooth animation in the canvas. It was also challenging to figure out the best way to manipulate the size, color, direction, and speed of the balloons to create an immersive and realistic experience for the user. Additionally, there was a challenge of figuring out the most efficient way to render the animation in the canvas without compromising performance.
+The animation sequence feature was a challenge because it required creating a series of different images of balloons that had to be manipulated and combined to create a smooth animation on the canvas. It was also challenging to figure out the optimal way to manipulate the size, color, direction, and speed of the balloons to create an immersive and realistic experience for the user. In addition, it was a challenge to figure out the most efficient manner to render the animation on canvas without compromising the performance. 
 
 #### Solution
 
-Created a Balloon class that keeps the state of each balloon in the game run time including it position `[x,y]`, the character value inside the baloon and as if it is visible or escaped in the canvas area. below is the balloon class implementation.
+The balloon class was created to store the state of each balloon in the game run time. In addition, it stores the balloon's `[x, y]` position, the corresponding character value inside the balloon, and the balloon's visible or escaped status. The JavaScript code for the balloon class is showcased below:
 
 ```javascript
 import { BALLOON_RADIUS } from './constants';
@@ -66,17 +66,17 @@ export class Balloon {
 }
 ```
 
-### 2) Changing the game background and game hero
+### 2) Game Background & Game Hero
 
-The feature of changing the game background and game hero from available options in the game setting allows users to customize their gaming experience by personalizing their game environment. This customization can include selecting from a variety of pre-designed backgrounds and game characters for the game screens.
+The game offers a feature to change the game background and game hero from the availaible options in game control. It allows users to customize their experience by personalizing their gaming envioronment. This customization includes selecting from a variety of pre-designed backgrounds and game heros for the game screen.
 
 #### Challenge
 
-The challenge of implementing this feature was to make sure that changing the background and game won't affect the state of the current game in any way and the update is reflected seemlesly
+The challenge of implementing this feature was to ensure that changing the background or hero would not effect the state of the game. It should update the game background and hero upon selection without intervening with the game logic.
 
 #### Solution
 
-I took out the background and the game character being drawn inside the canvas and put into the DOM with an id to manipulate and added a javascript code with click event listene to change only the styling and bring the change. below is snippet of code that shows the implementation.
+The background and the game hero drawn on the canvas are placed into the DOM with an id to be manipulated. A click event listener using Javascript was used to change the styling exclusively. A snippet of the code that showcases the implemenation can be seen below:
 
 ```javascript
 function setCanvasBackground(image) {
