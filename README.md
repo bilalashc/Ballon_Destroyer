@@ -1,6 +1,6 @@
-# Balloon distroyer game
+# Balloon Destroyer
 
-[Ballon distroyer game](link_to_demo) is a mini computer game program that helps users test and improve their keyboard usage and speed.
+[Ballon destroyer game](https://bilalashc.github.io/Ballon_Destroyer/) is a mini computer game program that helps users test and improve their keyboard usage and speed.
 
 ## How it works
 
