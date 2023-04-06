@@ -1,18 +1,21 @@
-# Balloon Destroyer
+# Balloon Destroyer - Typing Game
 
-[Ballon destroyer game](https://bilalashc.github.io/Ballon_Destroyer/) is a mini computer game program that helps users test and improve their keyboard usage and speed.
+[Ballon Destroyer](https://bilalashc.github.io/Ballon_Destroyer/) is a web browser game that helps users test and improve their typing skills by popping all the ballons before they exit the screen.
 
-## How it works
+The link to the live site for the game can be found [here](https://bilalashc.github.io/Ballon_Destroyer/)
 
-Word characters are added to balloons that fall down from atmospher. Whenever a ballon with a letter(word character) is visible inside our canvas, user clicks the character value on keyboard and the ballon with character are destroyed. For each ballon destroy, user gets a score of additional 10. If it escapes beneath, there will be decrease in the number of lives for the session. Lives are number of chances atmost which the balloons escapes the player without destroying.
+## Game Description
 
-## Tech stack
+Characters from the alphabet are presented on a balloon in random locations on the screen. As the balloon with a character is visible on the canvas, the user can press the character value on the keyboard and the balloon with the corresponding character is destroyed. For each balloon that is destroyed, the user gains 5 points. The user has five lives, but will lose a life for each balloon that escapes. Lives are the number of chances a user has to destroy the balloons before it escapes. The user can have varying difficulty levels, to set the speed of the balloons. The difficulties are: Easy, Medium, and Hard. In addition, the user will be able to track their highest score.  
 
-This app was developed using `html`, `css` and `javascript`. In addition, `webpack` was used to bundle the source code and generate static page out of it.
 
-## Some features
+## Tech Stack
 
-### 1) Animating balloons as if falling from atmospher in the canvas
+This app was developed using `HTML`, `CSS` and `JavaScript`. In addition, `Webpack` was used to bundle the source code and generate a static page. 
+
+## Features
+
+### 1) Balloons Animation
 
 The feature of animating balloons as if falling from atmosphere in the canvas involves creating a sequence of images that depict a group of balloons floating or falling through the sky. The image sequence of drawing balloons and text inside in the canvas is used to create an animation in the canvas, with the help of JavaScript, which will give the appearance that the balloons are falling through the atmosphere. The animation can be customized in terms of speed, color and size of the balloons, as well as their direction and distance they move throughout the canvas.
 
