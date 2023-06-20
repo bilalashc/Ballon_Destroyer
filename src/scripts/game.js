@@ -44,6 +44,12 @@ export class Game {
     this.finishGame();
   }
 
+  async stop(){
+    this.lives  = 0;
+    this.gameEnded = true;
+    this.finishGame();
+  }
+
   drawBalloons() {
     const { context, canvas } = this;
     const { height } = canvas;

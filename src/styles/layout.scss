@@ -1,22 +1,15 @@
-.title {
-  text-align: center;
-}
-
 .container {
   display: flex;
 }
-
 .container-left {
   display: flex;
   flex: 1;
 }
-
 .container-right {
   display: flex;
   flex: 4;
   justify-content: center;
 }
-
 .text-center {
   text-align: center;
 }
@@ -50,7 +43,7 @@
 }
 
 .bg1 {
-  background-image: url('./images/1.jpg');
+  background-image: url("./images/1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -59,7 +52,7 @@
 }
 
 .bg2 {
-  background-image: url('./images/2.jpg');
+  background-image: url("./images/2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -68,7 +61,7 @@
 }
 
 .bg3 {
-  background-image: url('./images/3.jpg');
+  background-image: url("./images/3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -95,7 +88,6 @@ button.btn {
 .primary {
   background-color: #007bff;
   border: 1px solid #007bff;
-
 }
 
 .danger {
@@ -115,8 +107,28 @@ select {
 
 #characterImg {
   position: absolute;
-  bottom: 0;
+  bottom: 15rem !important;
+  left: 9.8rem !important;
+  margin-left: 14%;
+}
+.page-footer {
+  position: absolute;
   left: 0;
-  margin-left: 20%;
-  margin-bottom: 4%;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  height: 70px; /* Adjust the height as needed */
+}
+
+.footer_container{
+  background-color: #e0dede;
+  padding: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer_company_details{
+  width: 300px;
+}
+.footer_about{
+  width: 800px;
 }

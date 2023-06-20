@@ -35,7 +35,17 @@ function initialezeGameControl() {
 
   let game;
   let prevScore = 0;
+  
+  endGame.addEventListener('click', () => {
+    let audio = document.querySelector('.musicOn audio');
+    audio.pause();
+    game.stop()
+  });
+
+
   startGame.addEventListener('click', () => {
+    let audio = document.querySelector('.musicOn audio');
+    audio.play();
     if (!game) {
       game = new Game(DIFFICULTIES[gameLevel.value], prevScore);
       document.body.addEventListener('keydown', (e) => {
