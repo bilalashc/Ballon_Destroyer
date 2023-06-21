@@ -32,7 +32,7 @@
     <link rel="icon" type="image/x-icon" href="./dist/images/favicon.png" />
     <script>
       function showGameInstructions() {
-        var pauseGame = document.getElementsByClassName("paused_game");
+        var pauseGame = document.getElementById("pauseGame");
         var gemStart = document.getElementById("startGame");
         var endGame = document.getElementById("endGame");
         
@@ -41,8 +41,12 @@
         endGame.style.display = "none";
       }
 
+      function pauseGameInstructions () {
+      alert("Game is paused!")
+      }
+
       function hideInstructions(){
-        var pauseGame = document.getElementsByClassName("paused_game");
+        var pauseGame = document.getElementById("pauseGame");
         var gemStart = document.getElementById("startGame");
         var endGame = document.getElementById("endGame");
         
@@ -140,8 +144,14 @@
           </div>
           <div style="margin-top: 8%">
             <button class="btn primary"  style="display: block;" id="startGame" onclick="hideInstructions()">Start Game</button>
-            <button style="display: none;" class="btn primary paused_game" id="startGame">Pause Game</button>
+            <div style="display: flex; justify-content: space-between;" >
+              <div>
+            <button style="display: none;" class="btn primary paused_game" id="pauseGame"  onclick="pauseGameInstructions()">Pause Game</button>
+          </div>
+          <div>
             <button style="display: none;" id="endGame" class="btn primary" onclick="showGameInstructions()">End Game</button>
+          </div>
+          </div>
           </div>
         </div>
       </div>
@@ -185,3 +195,4 @@
     <!-- Footer -->
   </body>
 </html>
+
