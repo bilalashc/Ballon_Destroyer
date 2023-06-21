@@ -106,9 +106,9 @@ select {
 }
 
 #characterImg {
-  position: absolute;
-  bottom: 15rem !important;
-  left: 9.8rem !important;
+  position: relative;
+  bottom: 6rem !important;
+  left: 7.8rem !important;
   margin-left: 14%;
 }
 .page-footer {

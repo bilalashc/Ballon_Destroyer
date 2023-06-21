@@ -32,18 +32,24 @@
     <link rel="icon" type="image/x-icon" href="./dist/images/favicon.png" />
     <script>
       function showGameInstructions() {
-        var container = document.getElementById("gameInstructionsContainer");
-        var gemStart = document.getElementById("game-start");
-        container.style.display = "block";
-        container.style.display = "flex";
-        gemStart.style.display = "none";
+        var pauseGame = document.getElementsByClassName("paused_game");
+        var gemStart = document.getElementById("startGame");
+        var endGame = document.getElementById("endGame");
+        
+        gemStart.style.display = "block";
+        pauseGame.style.display = "none";
+        endGame.style.display = "none";
       }
 
       function hideInstructions(){
-        var container = document.getElementById("gameInstructionsContainer");
-        var gemStart = document.getElementById("game-start");
-        container.style.display = "none";
-        gemStart.style.display = "block";
+        var pauseGame = document.getElementsByClassName("paused_game");
+        var gemStart = document.getElementById("startGame");
+        var endGame = document.getElementById("endGame");
+        
+        gemStart.style.display = "none";
+        pauseGame.style.display = "block";
+        endGame.style.display = "block";
+
       }
     </script>
   </head>
@@ -66,7 +72,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
               <a class="nav-link" href="#" onclick="hideInstructions()"
@@ -74,18 +80,16 @@
               ></a>
             </li>
           </ul>
-        </div>
+        </div> -->
       </nav>
     </div>
-    <div id="game-start" style="padding: 6% 46% 13%;">
-      <button class="btn primary" id="startGame" onclick="showGameInstructions()">Start Game</button>
-    </div>
+    
     <div
-      class="container"
+      class=""
       id="gameInstructionsContainer"
-      style="display: none; margin-top: 2rem; margin-right: 13rem;"
+      style="display: flex; margin-top: 2rem; margin-right: 13rem;"
     >
-      <div class="container-left">
+      <div style="width: 25%; padding: 22px;">
         <div style="width: 90%;" >
           <h3 class="text-center">Game Controls</h3>
           <hr />
@@ -135,11 +139,27 @@
             </select>
           </div>
           <div style="margin-top: 8%">
-            <button id="endGame" class="btn primary">End Game</button>
+            <button class="btn primary"  style="display: block;" id="startGame" onclick="hideInstructions()">Start Game</button>
+            <button style="display: none;" class="btn primary paused_game" id="startGame">Pause Game</button>
+            <button style="display: none;" id="endGame" class="btn primary" onclick="showGameInstructions()">End Game</button>
           </div>
         </div>
       </div>
-      <div style="position: absolute; left: 25%; width: 10%; top: 20%" ;>
+      
+      <div id="canvas_container" class="container-right bg2">
+        <canvas id="game_canvas" width="6000" height="3000"></canvas>
+      </div>
+    </div>
+      <div>
+        <img
+          id="characterImg"
+          height="160"
+          width="140"
+          src="./dist/images/ch-2.png"
+          alt=""
+        />
+      </div>
+      <div style="position: relative;bottom: 560px;left: 342px;" ;>
         <p style="color: aqua">
           High Score:
           <span id="highestScore">0</span>  
@@ -150,19 +170,7 @@
           <span id="lives">5</span>
         </p>
       </div>
-      <div id="canvas_container" class="container-right bg2">
-        <canvas id="game_canvas" width="6000" height="3000"></canvas>
-      </div>
-      <div>
-        <img
-          id="characterImg"
-          height="160"
-          width="140"
-          src="./dist/images/ch-2.png"
-          alt=""
-        />
-      </div>
-    </div>
+    
     <footer class="page-footer font-small blue">
       <div class="footer_container">
         <div class="footer_company_details">

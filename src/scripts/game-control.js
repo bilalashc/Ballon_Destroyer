@@ -61,7 +61,7 @@ function initialezeGameControl() {
       });
       game.run();
     } else {
-      alert('Game in progress!');
+      alert('Game in Paused!');
     }
   });
 

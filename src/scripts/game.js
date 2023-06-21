@@ -48,6 +48,7 @@ export class Game {
     this.lives  = 0;
     this.gameEnded = true;
     this.finishGame();
+    
   }
 
   drawBalloons() {
