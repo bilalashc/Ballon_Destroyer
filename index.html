@@ -155,11 +155,24 @@
           </div>
         </div>
       </div>
-      
-      <div id="canvas_container" class="container-right bg2">
+      <div style="
+      background: teal;
+      padding: 40px;
+      border: 2px solid burlywood;">
+        <p style="color: aqua">
+          High Score:       <span id="highestScore">0</span>  
+        </p>
+        <p style="color: aqua">Score: <span id="score">0</span></p>
+        <p style="color: aqua">
+          Lives:
+          <span id="lives">5</span>
+        </p>
+      </div>
+      <div id="canvas_container" class="bg2">
         <canvas id="game_canvas" width="6000" height="3000"></canvas>
       </div>
     </div>
+    
       <div>
         <img
           id="characterImg"
@@ -169,17 +182,7 @@
           alt=""
         />
       </div>
-      <div style="position: relative;bottom: 560px;left: 342px;" ;>
-        <p style="color: aqua">
-          High Score:
-          <span id="highestScore">0</span>  
-        </p>
-        <p style="color: aqua">Score: <span id="score">0</span></p>
-        <p style="color: aqua">
-          Lives:
-          <span id="lives">5</span>
-        </p>
-      </div>
+      
     
     <footer class="page-footer font-small blue">
       <div class="footer_container">
