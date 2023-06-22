@@ -99,9 +99,11 @@ function setGameHero(image) {
 }
 ```
 
-### 3) Destroying balloons by pressing corresponding character on keyboard
+### 3) Destroying balloons by pressing the corresponding character on the keyboard
 
-The balloon is destroyed when the character inside the balloon and the corresponding character is entered from the keyboard by the user. This is the core feature of the game and adds an element of interactivity. The user is challenged to enter the keyboard characters as fast as possible to increase his score and not lose any lives. In addition, the user is able to select difficulty based on their typing proficiency. 
+The balloon is destroyed when the character inside the balloon and the corresponding character are entered from the keyboard by the user. This is the core feature of the game and adds an element of interactivity. The user is challenged to enter the keyboard characters as fast as possible to increase his score and not lose any lives. In addition, the user is able to select difficulty based on their typing proficiency. 
+
+![Recording 2023-06-22 at 16 54 23](https://github.com/bilalashc/Ballon_Destroyer/assets/122466002/1cbd9818-a2c6-4d55-9704-f2e935a27741)
 
 #### Challenge
 
@@ -109,7 +111,7 @@ The challenge with this feature was that it requires the player to be precise an
 
 #### Solution
 
-The user waits for the balloon to enter the atmosphere as it becomes visible. An event listener was added to the game to listen for the key entered. When the user enters the matching key, the respective balloon from the array of balloons created is deleted. This change is reflected on the canvas. Additionaly, a user can can choose from different levels of difficulty under game control. These include: `Easy`, `Medium`, and `Hard`. A snippet of the code that controls the difficulty levels based on the step the balloons moves down at each frame is showcased below:
+The user waits for the balloon to enter the atmosphere as it becomes visible. An event listener was added to the game to listen for the key entered. When the user enters the matching key, the respective balloon from the array of balloons created is deleted. This change is reflected on the canvas. Additionally, a user can choose from different levels of difficulty under game control. These include: `Easy`, `Medium`, and `Hard`. A snippet of the code that controls the difficulty levels based on the step the balloons move down at each frame is showcased below:
 
 
 ```javascript
