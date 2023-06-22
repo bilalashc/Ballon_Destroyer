@@ -22,7 +22,9 @@ This app was developed using `HTML`, `CSS` and `JavaScript`. In addition, `Webpa
 
 ### 1) Balloons Animation
 
-To animate the balloons as they are dropping from the atmosphere in the canvas involves generating a sequence of images that depict a group of balloons floating or falling through the sky. The image sequence of drawing balloons and text inside the canvas is used to create the animation effect on the canvas by utilizing JavaScript. It gives the illusion that the ballons are dropping from the atmosphere. The animated balloons can be customized according to speed, color, size, direction, and the distance on the canvas.
+To animate the balloons as they are dropping from the atmosphere in the canvas involves generating a sequence of images that depict a group of balloons floating or falling through the sky. The image sequence of drawing balloons and text inside the canvas is used to create the animation effect on the canvas by utilizing JavaScript. It gives the illusion that the ballons are dropping from the atmosphere. The animated balloons can be customized according to speed, color, size, direction, and distance on the canvas.
+
+![BalloonCharacters](https://github.com/bilalashc/Ballon_Destroyer/assets/122466002/1c82708a-13db-4691-9688-b44da8b77396)
 
 #### Challenge
 
