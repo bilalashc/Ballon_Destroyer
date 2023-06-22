@@ -112,7 +112,7 @@ export class Game {
 
   generateBalloons() {
     const { width, height } = this.canvas;
-
+    
     for (let i = 0; i < NUMBER_OF_BALLOONS; i++) {
       const x = getRandomInt(2 * BALLOON_RADIUS, width - 2 * BALLOON_RADIUS);
       let y = 0;

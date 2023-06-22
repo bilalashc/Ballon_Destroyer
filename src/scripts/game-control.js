@@ -44,6 +44,11 @@ function initialezeGameControl() {
 
 
   startGame.addEventListener('click', () => {
+    var content = document.getElementById("instructions");
+
+    // Show the content
+    content.style.display = "none";
+
     let audio = document.querySelector('.musicOn audio');
     audio.play();
     if (!game) {
