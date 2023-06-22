@@ -75,11 +75,13 @@ export class Balloon {
 
 ### 2) Game Background & Game Hero
 
-The game offers a feature to change the game background and game hero from the availaible options in game control. It allows users to customize their experience by personalizing their gaming envioronment. This customization includes selecting from a variety of pre-designed backgrounds and game heros for the game screen.
+The game offers a feature to change the game background and game hero from the available options in game control. It allows users to customize their experience by personalizing their gaming environment. This customization includes selecting from a variety of pre-designed backgrounds and game heroes for the game screen.
+
+![GameControls](https://github.com/bilalashc/Ballon_Destroyer/assets/122466002/b1455b41-5cbf-4cbe-a850-b1d4fc8a50da)
 
 #### Challenge
 
-The challenge of implementing this feature was to ensure that changing the background or hero would not effect the state of the game. It should update the game background and hero upon selection without intervening with the game logic.
+The challenge of implementing this feature was to ensure that changing the background or hero would not affect the state of the game. It should update the game background and hero upon selection without intervening with the game logic.
 
 #### Solution
 
