@@ -118,7 +118,7 @@ select {
 
 .footer_container{
   background-color: #e0dede;
-  padding: 45px;
+  padding: 25px;
   display: flex;
   justify-content: space-between;
 }
